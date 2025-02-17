@@ -72,6 +72,29 @@ input, select, textarea {
 	appearance: none;
 }
 
+
+/* Copy to clipboard */
+
+	.copied-message {
+		position: absolute;
+		top: 50%;
+		right: 110%;
+		transform: translateY(-50%);
+		background-color: #28a745;
+		color: white;
+		padding: 5px 10px;
+		border-radius: 5px;
+		font-size: 14px;
+		opacity: 0;
+		transition: opacity 0.3s ease-in-out;
+		white-space: nowrap;
+	}
+
+	.copied-message.show {
+		opacity: 1;
+	}
+
+
 /* Basic */
 
 	@-ms-viewport {
